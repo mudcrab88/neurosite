@@ -1,0 +1,53 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+<canvas id="canvas" border = "1px solid black">
+		К сожалению,ваш браузер не может отобразить картинку
+	</canvas>
+	<canvas id="canvas_new" border = "1px solid black">
+		К сожалению,ваш браузер не может отобразить картинку
+	</canvas>
+	<div id = "btn">
+	<button id = "startbtn">Выполнить</button>
+	<button id = "clearbtn">Очистить</button>
+	<select id="select_letter">
+        <option>А</option>
+        <option>Б</option>
+        <option>В</option>
+        <option>Г</option>
+        <option>Д</option>
+        <option>Е</option>
+        <option>Ж</option>
+        <option>З</option>
+        <option>И</option>
+        <option>К</option>
+        <option>Л</option>
+        <option>М</option>
+        <option>Н</option>
+        <option>О</option>
+        <option>П</option>
+        <option>Р</option>
+        <option>С</option>
+        <option>Т</option>
+        <option>У</option>
+        <option>Ф</option>
+        <option>Х</option>
+        <option>Ц</option>
+        <option>Ч</option>
+        <option>Ш</option>
+        <option>Щ</option>
+        <option>Ъ</option>
+        <option>Ы</option>
+        <option>Ь</option>
+        <option>Э</option>
+        <option>Ю</option>
+        <option>Я</option>
+    </select><br/>
+    Режим:
+    <input type="radio" name="mode" value="recognition" checked>Распознавание
+    <input type="radio" name="mode" value="learning">Обучение
+	</div>
+	<div>
+	    <p id = "result"></p>
+	</div>
+{% endblock %}
